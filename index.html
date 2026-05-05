@@ -1,0 +1,547 @@
+   <!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Menù Osteria Vera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+    
+    <div id="home-view">
+        <div class="logo-header">
+            <h1>Osteria Vera</h1>
+            <p>Cucina Napoletana & Aperitivi</p>
+        </div>
+
+        <h2 class="section-heading">I NOSTRI MENÙ</h2>
+
+        <button class="menu-btn" onclick="apriPagina('drink')">Drink e Aperitivi</button>
+        <button class="menu-btn" onclick="apriPagina('antipasti')">Antipasti e Sfiziosità</button>
+        <button class="menu-btn" onclick="apriPagina('panuozzi')">I Panuozzi</button> 
+        <button class="menu-btn" onclick="apriPagina('cucina')">Piatti Unici</button>
+			<button class="menu-btn" onclick="apriPagina('dolci')">Dolci</button>
+        <button class="menu-btn" onclick="apriPagina('vini')">Vini</button>
+        <button class="menu-btn" onclick="apriPagina('birre')">Birre</button>
+        <button class="menu-btn" onclick="apriPagina('caffetteria')">Bar & Caffetteria</button>
+
+        <hr class="divider">
+
+        <div class="review-box">
+            <h3 class="review-title">COME TI SEI TROVATO?</h3>
+            <button class="review-btn" onclick="alert('Qui inserirai il link di Google Maps o Tripadvisor')">LASCIA UNA RECENSIONE</button>
+        </div>
+
+        <button class="menu-btn" onclick="apriPagina('info')">ALTRE INFO SUL LOCALE</button>
+
+        
+    </div>
+
+      <div id="menu-view" class="view-page">
+        <div class="top-bar">
+            <button class="back-btn" onclick="tornaIndietro()">← INDIETRO</button>
+        </div>
+        
+        <div class="menu-paper">
+            <div class="menu-paper-inner">
+                
+                <h2 class="menu-page-title" id="titolo-sezione">Titolo</h2>
+
+     <div id="drink" class="piatti-list">
+    <div class="desc-box">
+        <strong style="font-family: var(--font-serif); font-size: 16px; margin-bottom:5px; display:block;">La Formula Aperitivo (+4,00€)</strong>
+        Aggiungila a qualsiasi drink per ricevere il nostro piattino sfizioso
+        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">3</div><div class="allergen-icon">7</div></div>
+    </div>
+    
+    <div class="item-row">
+        <div class="item-header">
+            <div class="item-title">Spritz (Aperol / Campari / Select)</div>
+            <div class="item-price">6,00 €</div>
+        </div>
+        <p class="item-desc">Prosecco, Aperol / Campari /Select, soda.</p>
+        <div class="item-footer-inline">
+            <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+            <div class="aperitivo-price">Con aperitivo: 10,00 €</div>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header">
+            <div class="item-title">Hugo</div>
+            <div class="item-price">7,00 €</div>
+        </div>
+        <p class="item-desc">Prosecco, sciroppo ai fiori di sambuco, soda, menta fresca e lime.</p>
+        <div class="item-footer-inline">
+            <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+            <div class="aperitivo-price">Con aperitivo: 11,00 €</div>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header">
+            <div class="item-title">Fragoloso</div>
+            <div class="item-price">7,00 €</div>
+        </div>
+        <p class="item-desc">Prosecco, purea di fragole, soda, succo di limone.</p>
+        <div class="item-footer-inline">
+            <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+            <div class="aperitivo-price">Con aperitivo: 11,00 €</div>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header">
+            <div class="item-title">Passoa Aperol</div>
+            <div class="item-price">8,00 €</div>
+        </div>
+        <p class="item-desc">Passoa, Aperol, purea di passion fruit.</p>
+        <div class="item-footer-inline">
+            <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+            <div class="aperitivo-price">Con aperitivo: 12,00 €</div>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header">
+            <div class="item-title">Enzoni</div>
+            <div class="item-price">7,00 €</div>
+        </div>
+        <p class="item-desc">Gin, Campari, succo di limone, zucchero e uva fresca.</p>
+        <div class="item-footer-inline">
+            <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+            <div class="aperitivo-price">Con aperitivo: 11,00 €</div>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header">
+            <div class="item-title">Negroni</div>
+            <div class="item-price">6,00 €</div>
+        </div>
+        <p class="item-desc">Gin, Vermouth rosso e Campari.</p>
+        <div class="item-footer-inline">
+            <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+            <div class="aperitivo-price">Con aperitivo: 10,00 €</div>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header">
+            <div class="item-title">Negroni Sbagliato</div>
+             <div class="item-price">6,00 €</div>
+        </div>
+        <p class="item-desc">Prosecco, Vermouth rosso e Campari.</p>
+        <div class="item-footer-inline">
+            <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+            <div class="aperitivo-price">Con aperitivo: 10,00 €</div>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header">
+            <div class="item-title">Limoncello Tonic</div>
+            <div class="item-price">7,00 €</div>
+        </div>
+        <p class="item-desc">Limoncello, acqua tonica e limone.</p>
+        <div class="item-footer-inline">
+            <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+            <div class="aperitivo-price">Con aperitivo: 11,00 €</div>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header">
+            <div class="item-title">Mirto Tonic</div>
+            <div class="item-price">7,00 €</div>
+        </div>
+        <p class="item-desc">Mirto sardo, acqua tonica e succo di limone.</p>
+        <div class="item-footer-inline">
+            <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+            <div class="aperitivo-price">Con aperitivo: 11,00 €</div>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header">
+            <div class="item-title">Basilicolo</div>
+            <div class="item-price">7,00 €</div>
+        </div>
+        <p class="item-desc">Gin, succo di limone, basilico.</p>
+        <div class="item-footer-inline">
+            <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+            <div class="aperitivo-price">Con aperitivo: 11,00 €</div>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header">
+            <div class="item-title">Gin Tonic</div>
+              <div class="item-price">7,00 €</div>
+        </div>
+        <p class="item-desc">Gin e Acqua Tonica.</p>
+        <div class="item-footer-inline">
+            <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+            <div class="aperitivo-price">Con aperitivo: 11,00 €</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+                              <!-- SEZIONE ANTIPASTI E SFIZIOSITÀ -->
+               <div id="antipasti" class="piatti-list">
+
+                    <div class="item-row">
+    <div class="item-header"><div class="item-title">Antipasto della casa</div><div class="item-price">6,00 €</div></div>
+    <p class="item-desc">frittatina di pasta, montanara con pomodoro e basilico, bruschetta ricotta e pere caramellate</p>
+    <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">3</div><div class="allergen-icon">7</div></div>
+</div>
+
+
+                    
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Provola in Purgatorio</div><div class="item-price">7,00 €</div></div>
+                        <p class="item-desc">Provola affumicata con sugo di pomodoro e basilico accompagnato con il pane.</p>
+                        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div></div>
+                    </div>
+                    
+                    <div class="item-row">
+    <div class="item-header">
+        <div class="item-title">Tagliere di Formaggi</div>
+        <div class="item-price">12,00 €</div>
+    </div>
+    <p class="item-desc">Selezione di formaggi locali serviti con miele e confetture.</p>
+    <div class="allergen-icons"><div class="allergen-icon">7</div></div>
+</div>
+
+<div class="item-row">
+    <div class="item-header">
+        <div class="item-title">Tagliere di Salumi</div>
+        <div class="item-price">12,00 €</div>
+    </div>
+    <p class="item-desc">Selezione di salumi nostrani di alta qualità tagliati freschi.</p>
+    <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+</div>
+
+                   
+                    
+                    
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Frittelle</div><div class="item-price">5,00 €</div></div>
+                        <p class="item-desc"></p>
+                        <div class="allergen-icons"><div class="allergen-icon">1</div></div>
+                    </div>
+
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Patatine Fritte</div><div class="item-price">4,00 €</div></div>
+                        <p class="item-desc"></p>
+<div class="allergen-icons"><div class="allergen-icon">1</div></div>
+                    </div>
+                </div>
+
+                <!-- NUOVA SEZIONE PANUOZZI -->
+               <div id="panuozzi" class="piatti-list">
+    <div class="menu-sub-header">I Nostri Panuozzi</div>
+    
+    <div class="item-row">
+        <div class="item-header"><div class="item-title">Vico</div><div class="item-price">9,00 €</div></div>
+        <p class="item-desc">Mozzarella, salamino, ricotta.</p>
+        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div><div class="allergen-icon">12</div></div>
+    </div>
+    
+    <div class="item-row">
+        <div class="item-header"><div class="item-title">Arola</div><div class="item-price">9,00 €</div></div>
+        <p class="item-desc">Provola, pancetta, melanzane sott'olio.</p>
+        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div></div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header"><div class="item-title">Fornacelle</div><div class="item-price">9,00 €</div></div>
+        <p class="item-desc">Provola, patate al forno, salsiccia.</p>
+        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div></div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header"><div class="item-title">Moiano</div><div class="item-price">10,00 €</div></div>
+        <p class="item-desc">Mozzarella, mortadella, stracciatella.</p>
+        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div><div class="allergen-icon">8</div></div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header"><div class="item-title">Montechiaro</div><div class="item-price">11,00 €</div></div>
+        <p class="item-desc">Mozzarella, patate al forno, funghi porcini, taleggio.</p>
+        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div></div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header"><div class="item-title">Seiano</div><div class="item-price">12,00 €</div></div>
+        <p class="item-desc">Mozzarella, crudo, rucola, pomodorini.</p>
+        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div></div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-header"><div class="item-title">Ticciano</div><div class="item-price">10,00 €</div></div>
+        <p class="item-desc">Mozzarella, melanzane fritte, 'nduja, pecorino.</p>
+        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div></div>
+    </div>
+</div>
+
+
+<!-- NUOVA SEZIONE Cucina -->
+
+                <div id="cucina" class="piatti-list">
+                    
+                   
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Gnocchi alla Sorrentina</div><div class="item-price">11,00 €</div></div>
+                        <p class="item-desc">Gnocchi con sugo di pomodoro, mozzarella, basilico e parmiggiano.</p>
+                        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div></div>
+                    </div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">fusilli alla Genovese</div><div class="item-price">12,00 €</div></div>
+                        <p class="item-desc">Pasta fresca con stracotto di manzo e cipolle con pecorino.</p>
+                        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div><div class="allergen-icon">9</div>
+</div>
+                      
+                    </div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Trofie</div><div class="item-price">12,00 €</div></div>
+                        <p class="item-desc">Pasta fresca con crema di peperoni, salsiccia e stracciatella.</p>
+                        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div><div class="allergen-icon">9</div></div>
+                      
+                    </div>
+                    
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Polpette al Sugo</div><div class="item-price">12,00 €</div></div>
+                       <p class="item-desc">Polpette di manzo con sugo di pomodoro.</p>
+                        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">3</div><div class="allergen-icon">7</div></div>
+                        
+                    </div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Parmigiana di Melanzane</div><div class="item-price">10,00 €</div></div>
+                        <p class="item-desc">Melanzane fritte, pomodoro, mozzarella, basilico e parmigiano.</p>
+                        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div></div>
+                    </div>
+<div class="item-row">
+                        <div class="item-header"><div class="item-title">Caprese</div><div class="item-price">12,00 €</div></div>
+                        <p class="item-desc">Mozzarella di bufala, pomodoro fresco e basilico.</p>
+                        <div class="allergen-icons"><div class="allergen-icon">7</div></div>
+                      
+                    </div>
+
+                </div> 
+
+
+
+<div id="dolci" class="piatti-list">
+
+    <div class="item-row">
+        <div class="item-header"><div class="item-title">Tiramisù della Casa</div><div class="item-price">6,00 €</div></div>
+       
+        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">3</div><div class="allergen-icon">7</div></div>
+       
+    </div>
+    <div class="item-row">
+        <div class="item-header"><div class="item-title">Babà al Rum</div><div class="item-price">5,00 €</div></div>
+        <p class="item-desc">Il re dei dolci napoletani, bagnato nel vero rum.</p>
+        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">3</div><div class="allergen-icon">7</div></div>
+    </div>
+    <div class="item-row">
+        <div class="item-header"><div class="item-title">Cheesecake ai Frutti di Bosco</div><div class="item-price">6,00 €</div></div>
+        <p class="item-desc">Base croccante di biscotti con crema morbida di formaggio e coulis ai frutti rossi.</p>
+        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div></div>
+        
+    </div>
+    <div class="item-row">
+        <div class="item-header"><div class="item-title">Tortino al Cioccolato con Cuore Caldo</div><div class="item-price">6,50 €</div></div>
+        <p class="item-desc">Servito con una pallina di gelato alla vaniglia.</p>
+        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">3</div><div class="allergen-icon">7</div></div>
+    </div>
+</div>
+
+
+                <div id="vini" class="piatti-list">
+
+                    <div class="menu-sub-header">Vini Bianchi</div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Falanghina del Sannio</div><div class="item-price" style="text-align: right;">20,00 €<br><span style="font-size: 11px; font-weight: normal; color: #666;">Calice: 5,00 €</span></div></div>
+                        <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+                    </div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Greco di Tufo DOCG</div><div class="item-price" style="text-align: right;">22,00 €<br><span style="font-size: 11px; font-weight: normal; color: #666;">Calice: 6,00 €</span></div></div>
+                        <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+                    </div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Fiano di Avellino</div><div class="item-price" style="text-align: right;">24,00 €<br><span style="font-size: 11px; font-weight: normal; color: #666;">Calice: 6,50 €</span></div></div>
+                        <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+                    </div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Gewürztraminer</div><div class="item-price" style="text-align: right;">25,00 €<br><span style="font-size: 11px; font-weight: normal; color: #666;">Calice: 7,00 €</span></div></div>
+                        <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+                    </div>
+
+                    <div class="menu-sub-header">Vini Rossi</div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Aglianico Campania IGT</div><div class="item-price" style="text-align: right;">20,00 €<br><span style="font-size: 11px; font-weight: normal; color: #666;">Calice: 5,00 €</span></div></div>
+                        <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+                    </div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Primitivo di Manduria</div><div class="item-price" style="text-align: right;">22,00 €<br><span style="font-size: 11px; font-weight: normal; color: #666;">Calice: 6,00 €</span></div></div>
+                        <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+                    </div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Chianti Classico DOCG</div><div class="item-price" style="text-align: right;">24,00 €<br><span style="font-size: 11px; font-weight: normal; color: #666;">Calice: 6,50 €</span></div></div>
+                        <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+                    </div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Nero d'Avola Sicilia</div><div class="item-price" style="text-align: right;">20,00 €<br><span style="font-size: 11px; font-weight: normal; color: #666;">Calice: 5,00 €</span></div></div>
+                        <div class="allergen-icons"><div class="allergen-icon">12</div></div>
+                    </div>
+                </div>
+
+                                <div id="birre" class="piatti-list">
+                   <div class="menu-sub-header">Alla Spina</div>
+
+<div class="item-row">
+    <div class="item-header">
+        <div class="item-title">Ama Pils</div>
+        <div class="item-price" style="text-align: right;">
+            Piccola: 3,50 €<br>
+            Media: 6,50 €
+        </div>
+    </div>
+    <div class="allergen-icons"><div class="allergen-icon">1</div></div>
+</div>
+
+<div class="item-row">
+    <div class="item-header">
+        <div class="item-title">Diabolic Red</div>
+        <div class="item-price" style="text-align: right;">
+            Piccola: 3,50 €<br>
+            Media: 6,50 €
+        </div>
+    </div>
+    <div class="allergen-icons"><div class="allergen-icon">1</div></div>
+</div>
+                    
+<div class="item-row">
+    <div class="item-header">
+        <div class="item-title">Adnams Innovation</div>
+        <div class="item-price" style="text-align: right;">
+            Piccola: 4,00 €<br>
+            Media: 7,50 €
+        </div>
+    </div>
+    <div class="allergen-icons"><div class="allergen-icon">1</div></div>
+</div>
+
+
+                    <div class="menu-sub-header">In Bottiglia</div>
+
+                    <div class="item-row"><div class="item-header"><div class="item-title">Lupus Blonde (33cl)</div><div class="item-price">7,00 €</div></div><div class="allergen-icons"><div class="allergen-icon">1</div></div></div>
+                    <div class="item-row"><div class="item-header"><div class="item-title">Rochefort 8º (33cl)</div><div class="item-price">8,50 €</div></div><div class="allergen-icons"><div class="allergen-icon">1</div></div></div>
+                    <div class="item-row"><div class="item-header"><div class="item-title">William's Joker I.P.A (50cl)</div><div class="item-price">7,50</div></div><div class="allergen-icons"><div class="allergen-icon">1</div></div></div>
+                    <div class="item-row"><div class="item-header"><div class="item-title">William's Joker I.P.A Alcol Free (44cl)</div><div class="item-price">8,00 €</div></div><div class="allergen-icons"><div class="allergen-icon">1</div></div></div> 
+ <div class="item-row"><div class="item-header"><div class="item-title">William's Talking Head A.P.ALE (50cl)</div><div class="item-price">7,00 €</div></div><div class="allergen-icons"><div class="allergen-icon">1</div></div></div>
+                </div>
+
+
+                                                <div id="caffetteria" class="piatti-list">
+                    <div class="menu-sub-header">Le Bibite</div>
+                    <div class="item-row"><div class="item-header"><div class="item-title">Acqua Naturale / Frizzante (1L)</div><div class="item-price">2,00 €</div></div></div>
+                    <div class="item-row"><div class="item-header"><div class="item-title">Coca Cola / Coca Cola Zero</div><div class="item-price">3,00 €</div></div></div>
+                    <div class="item-row"><div class="item-header"><div class="item-title">Fanta / Sprite</div><div class="item-price">3,00 €</div></div></div>
+                    <div class="item-row"><div class="item-header"><div class="item-title">Estathé Limone / Pesca</div><div class="item-price">3,00 €</div></div></div>
+
+                    <div class="menu-sub-header">Amari e Liquori</div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Meloncello</div><div class="item-price">3,50 €</div></div>
+                        <div class="allergen-icons"><div class="allergen-icon">7</div></div>
+                    </div>
+                    <div class="item-row"><div class="item-header"><div class="item-title">Limoncello / Liquirizia</div><div class="item-price">3,50 €</div></div></div>
+                    <div class="item-row"><div class="item-header"><div class="item-title">Amaro del Capo / Montenegro</div><div class="item-price">4,00 €</div></div></div>
+                    <div class="item-row"><div class="item-header"><div class="item-title">Lucano / Jägermeister</div><div class="item-price">4,00 €</div></div></div>
+                    <div class="item-row"><div class="item-header"><div class="item-title">Grappa Bianca / Barricata</div><div class="item-price">5,00 €</div></div></div>
+
+                    <div class="menu-sub-header">La Caffetteria</div>
+                    <div class="item-row"><div class="item-header"><div class="item-title">Caffè Espresso / Decaffeinato</div><div class="item-price">1,50 €</div></div></div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Caffè Macchiato</div><div class="item-price">1,80 €</div></div>
+                        <div class="allergen-icons"><div class="allergen-icon">7</div></div>
+                    </div>
+                    <div class="item-row">
+                        <div class="item-header"><div class="item-title">Caffè al Ginseng / Orzo</div><div class="item-price">2,50 €</div></div>
+                        <div class="allergen-icons"><div class="allergen-icon">1</div><div class="allergen-icon">7</div></div>
+                    </div>
+                </div>
+
+
+
+                <div class="menu-footer-allergens">
+                    <h3>LISTA DEGLI ALLERGENI</h3>
+                    <p>Per evitare spiacevoli inconvenienti si prega di informare preventivamente il nostro personale nel caso di allergie o intolleranze alimentari. Siamo preparati per consigliarvi nel migliore dei modi.</p>
+                    <button class="menu-btn" onclick="apriFinestraAllergeni()">CONSULTA LA LISTA</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="info-view" class="view-page">
+        <div class="top-bar">
+            <button class="back-btn" onclick="tornaIndietro()">← INDIETRO</button>
+        </div>
+        
+        <div class="menu-paper">
+            <div class="menu-paper-inner">
+                <h2 class="menu-page-title">Info sul Locale</h2>
+                <div class="info-content">
+                    <h3 style="font-family: var(--font-serif); font-weight: normal; color: var(--petrolio);">Orari</h3>
+                    <ul>
+                        <li><strong>Lun - Gio:</strong> Chiusi</li>
+                        <li><strong>Venerdì:</strong> 17:00 - 23:00</li>
+                        <li><strong>Sabato:</strong> 17:00 - 24:00</li>
+                        <li><strong>Domenica:</strong> 17:00 - 23:00</li>
+                    </ul>
+                    <a href="tel:+39 03519907290" class="call-btn">CHIAMA ORA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="finestra-allergeni" class="modal-overlay" onclick="chiudiFinestraAllergeni()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        
+        <button class="close-btn" onclick="chiudiFinestraAllergeni()">✕</button>
+        
+        <h2 class="modal-title">Lista degli allergeni</h2>
+        <p class="modal-subtitle">Regolamento CEE 1169/2011 D.L. n.109 del 27 gennaio 1992 sezione III - D.L. n.114/2006 I nostri piatti possono contenere allergeni.</p>
+
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🌾</div><div class="allergen-modal-text"><h4>1. Glutine</h4><p>cereali, grano, segale, orzo, avena, farro, kamut, inclusi ibridati derivati.</p></div></div>
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🦐</div><div class="allergen-modal-text"><h4>2. Crostacei</h4><p>marini e d'acqua dolce: gamberi, scampi, granchi e simili.</p></div></div>
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🥚</div><div class="allergen-modal-text"><h4>3. Uova</h4><p>uova e prodotti che le contengono: maionese, emulsionanti, pasta all'uovo.</p></div></div>
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🐟</div><div class="allergen-modal-text"><h4>4. Pesce</h4><p>prodotti alimentari in cui è presente il pesce, anche in piccole percentuali.</p></div></div>
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🥜</div><div class="allergen-modal-text"><h4>5. Arachidi</h4><p>Snack confezionati, creme e condimenti in cui vi sia anche in piccole dosi.</p></div></div>
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🌱</div><div class="allergen-modal-text"><h4>6. Soia</h4><p>prodotti derivati come latte di soia, tofu, spaghetti di soia e simili.</p></div></div>
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🥛</div><div class="allergen-modal-text"><h4>7. Latte</h4><p>ogni prodotto in cui viene usato il latte: yogurt, biscotti, torte, gelato e creme varie.</p></div></div>
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🌰</div><div class="allergen-modal-text"><h4>8. Frutta a guscio</h4><p>mandorle, nocciole, noci comuni, noci di acagiù, noci pecan, anacardi, pistacchi.</p></div></div>
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🥬</div><div class="allergen-modal-text"><h4>9. Sedano</h4><p>sia in pezzi che all'interno di preparati per zuppe, salse e concentrati vegetali.</p></div></div>
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🌭</div><div class="allergen-modal-text"><h4>10. Senape</h4><p>si può trovare nelle salse e nei condimenti, specie nella mostarda.</p></div></div>
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🥯</div><div class="allergen-modal-text"><h4>11. Sesamo</h4><p>semi interi usati per il pane, farine che lo contengono in minima percentuale.</p></div></div>
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🍷</div><div class="allergen-modal-text"><h4>12. Solfiti</h4><p>anidride solforosa e solfiti in concentrazione superiore a 10 mg/kg o 10 mg/l espressi come SO2 – usati come conservanti.</p></div></div>
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🫘</div><div class="allergen-modal-text"><h4>13. Lupini</h4><p>presenti in cibi vegan sotto forma di: arrosti, salamini, farine e similari.</p></div></div>
+        <div class="allergen-modal-item"><div class="allergen-modal-icon">🦪</div><div class="allergen-modal-text"><h4>14. Molluschi</h4><p>canestrello, cannolicchio, capasanta, cozza, ostrica, patella, vongola, tellina, ecc...</p></div></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
