@@ -472,7 +472,7 @@ body {
     margin-top: 0;
 }
 
-.aperitivo-price {
-    font-size: 11px;
+.aperitivo-price { 
+    font-size: 13px;
     color: #666; /* Grigio scuro per distinguerlo dal prezzo base */
 }
