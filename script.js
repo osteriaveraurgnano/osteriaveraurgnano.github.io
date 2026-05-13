@@ -7,6 +7,7 @@ const titoliCategorie = {
     'vini': 'La Cantina',
     'birre': 'Le Birre',
     'caffetteria': 'Bar & Caffetteria'
+    'ginSelection': 'Gin Selection'
 };
 
 // --- DIZIONARIO DEGLI ALLERGENI (Da Numero a Simbolo) ---
