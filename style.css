@@ -475,4 +475,7 @@ body {
 .aperitivo-price { 
     font-size:13px;
     color: #666; /* Grigio scuro per distinguerlo dal prezzo base */
+   display: block;      /* Forza il prezzo ad andare su una riga tutta sua */
+    white-space: nowrap; /* Impedisce al prezzo di spezzarsi in due righe */
+    text-align: right;
 }
