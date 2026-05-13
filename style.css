@@ -248,11 +248,11 @@ body {
     margin-left: 15px;   /* Crea un "cuscinetto" di spazio per non far appiccicare le lettere al prezzo */
 }
 .item-desc {
-    font-size: 8px;       
+    font-size: 9px;       
     color: #666;           
     margin: 4px 0 0 0;     
     line-height: 1.4;      
-    padding-right: 180px; 
+    padding-right: 150px; 
 }
 
 
