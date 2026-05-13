@@ -6,7 +6,7 @@ const titoliCategorie = {
     'dolci': 'I Nostri Dolci',
     'vini': 'La Cantina',
     'birre': 'Le Birre',
-    'caffetteria': 'Bar & Caffetteria'
+    'caffetteria': 'Bar & Caffetteria',
     'ginSelection': 'Gin Selection'
 };
 
