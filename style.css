@@ -261,7 +261,7 @@ body {
     display: flex;
     gap: 6px;
     margin-top: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding-right: 180px;  
 }
 
