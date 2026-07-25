@@ -248,7 +248,7 @@ body {
     margin-left: 15px;   /* Crea un "cuscinetto" di spazio per non far appiccicare le lettere al prezzo */
 }
 .item-desc {
-    font-size: 9px;       
+    font-size: 10px;       
     color: #666;           
     margin: 4px 0 0 0;     
     line-height: 1.4;      
